@@ -9,3 +9,7 @@
 `tsc` - transpile ts into js
 
 `node dist/${file-name}` - execute specified js file in dist folder
+
+`npm i accounting` - number and currency formatting libaray (javascript) package for money import
+
+`npm i nodemon -g`
