@@ -12,4 +12,4 @@
 
 `npm i accounting` - number and currency formatting libaray (javascript) package for money import
 
-`npm i nodemon -g`
+`npm i nodemon -g` - global packapge for auto-restarts on save change

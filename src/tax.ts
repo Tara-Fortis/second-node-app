@@ -12,5 +12,5 @@ http.createServer((requ: http.IncomingMessage, res: http.ServerResponse) => {
     res.write(`<p>Sub-Total: ${accounting.formatMoney(subTotal)}</p>`);
     res.write(`<p>Tax: ${accounting.formatMoney(tax)}`);
     res.write(`<p>Total: ${accounting.formatMoney(total)}`);
-    res.end;
-}).listen(4000);
+    res.end();
+}).listen(3000);

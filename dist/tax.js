@@ -7,7 +7,7 @@ const http_1 = __importDefault(require("http"));
 const accounting_1 = __importDefault(require("accounting"));
 // run server
 http_1.default.createServer((requ, res) => {
-    const subTotal = 500.10;
+    const subTotal = 50.10;
     const tax = subTotal * 0.13;
     const total = subTotal + tax;
     res.writeHead(200, { 'Content-Type': 'text/html' });
@@ -15,5 +15,5 @@ http_1.default.createServer((requ, res) => {
     res.write(`<p>Sub-Total: ${accounting_1.default.formatMoney(subTotal)}</p>`);
     res.write(`<p>Tax: ${accounting_1.default.formatMoney(tax)}`);
     res.write(`<p>Total: ${accounting_1.default.formatMoney(total)}`);
-    res.end;
-}).listen(4000);
+    res.end();
+}).listen(3000);
